@@ -1,0 +1,186 @@
+:root{
+    --clr-primary-200: hsl(225, 100%, 94%);
+    --clr-primary-500: hsl(245, 75%, 52%);
+
+    --clr-neutral-100: hsl(225, 100%, 98%);
+    --clr-neutral-400: hsl(224, 23%, 55%);
+    --clr-neutral-800: hsl(223, 47%, 23%);
+
+    --fw-black: 900;
+    --fw-bold: 700; 
+    --fw-regular: 500
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+    
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+    8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 
+    Font Main is 16px 
+*/
+
+body{
+    background-color: var(--clr-primary-200);
+    display: grid;
+    font-family: 'Red Hat Display', sans-serif;
+    place-content: center;
+    font-weight: var(--fw-regular);
+    margin: 1.75rem;
+    padding: 1rem; 
+    
+}
+
+.image{
+    display: grid;
+    max-width: 370px;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.order-summary{
+    display: grid;
+    gap: 20px;
+    background-color: var(--clr-neutral-100);
+    text-align: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+    overflow: hidden;
+    max-width: 370px;
+    padding: 1rem 1.75rem 1.5rem 1.75rem; 
+    margin-bottom: 1rem;
+}
+
+
+.summary-title{
+    font-weight: var(--fw-black);
+    padding-top: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
+    color: var(--clr-neutral-800);
+}
+
+.description{
+    padding: 0 0.75rem 1rem 0.75rem; 
+    font-size: 1.01rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-400); 
+}
+
+.plan{
+    background-color: rgb(239, 240, 250);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0.75rem;
+    border-radius: 10px;
+}
+
+.plan p{
+    padding-right: 2.5rem;
+}
+
+.plan-title{
+    font-weight: var(--fw-black);
+}
+
+.price{
+    color: var(--clr-neutral-400);
+    font-weight: var(--fw-bold);
+}
+
+.modify{
+    display: flex;
+    align-items: center;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-500);
+}
+
+.button{
+    border: 0;
+    text-decoration: none;
+    padding: 1em 1em;
+    border-radius: 10px;
+    background-color: var(--clr-primary-500);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-black);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: -1px 15px 52px -9px rgba(56,41,224,0.55);
+                -webkit-box-shadow: -1px 10px 42px -9px rgba(56,41,224,0.55);
+                -moz-box-shadow: -1px 15px 52px -9px rgba(56,41,224,0.55);
+}
+
+.cancel{
+    text-decoration: none;
+    color: var(--clr-neutral-400);
+    margin-bottom: 0.5rem;
+    font-weight: var(--fw-black);
+}
+
+.footer{
+    font-size: 11px; 
+    text-align: center;
+}
+
+.footer a{
+    color: hsl(228, 45%, 44%); 
+}
